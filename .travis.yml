@@ -1,19 +1,26 @@
 language: go
 
-install: go get -v github.com/gohugoio/hugo
-
+go:
+  - "1.8" 
+branches:
+  only:
+    - hugo 
+install:
+    - uname -a
+    - wget https://github.com/gohugoio/hugo/releases/download/v0.55.4/hugo_0.55.4_Linux-64bit.deb
+    - sudo dpkg -i hugo*.deb
+    - hugo version
+    - ls
+    - pwd
 script:
-    - hugo
-    
+  - hugo
 deploy:
-    - cd ./public
-    - git config user.name "ca7dEm0n"
-    - git config user.email "a-ca7@139.com"
-    - git init
-    - git add .
-    - git commit -m "# auto build"
-    - git push --force "https://ca7dEm0n:${GITHUB_TOKEN}@${GITHUB_URL}" master:master
-
-env:
-    global:
-        - GITHUB_URL: https://github.com/ca7dEm0n/docs.git    
+  provider: pages
+  skip-cleanup: true
+  local-dir: public
+  target-branch: master
+  github-token: $GITHUB_TOKEN
+  fqdn: a-cat.cn
+  keep-history: true
+  on:
+    branch: hugo
