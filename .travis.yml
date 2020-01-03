@@ -1,3 +1,7 @@
+sudo: false
+language: go
+git:
+    depth: 1
 install:
   - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.55.4/hugo_0.55.4_Linux-64bit.deb
   - sudo dpkg -i hugo_0.55.4_Linux-64bit.deb
@@ -5,8 +9,14 @@ install:
 script:
   - hugo
 deploy:
-  - provider: script
-    script: ./deploy.sh
-    skip_cleanup: true
-    on:
-      branch: master
+  provider: pages
+  skip_cleanup: true
+  github_token: ${GITHUB_TOKEN}
+  repo: ca7dEm0n/ca7dEm0n.github.io
+  email: a-ca7@139.com
+  name: ca7dEm0n
+  fqdn: https://ca7dEm0n.github.io
+  skip_cleanup: true
+  target_branch: master
+  on:
+    branch: master
