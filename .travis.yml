@@ -16,7 +16,7 @@ deploy:
   email: a-ca7@139.com
   name: ca7dEm0n
   fqdn: https://ca7dEm0n.github.io
-  skip_cleanup: true
   target_branch: master
+  local-dir: public
   on:
     branch: master
