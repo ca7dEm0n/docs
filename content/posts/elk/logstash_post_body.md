@@ -1,11 +1,10 @@
 ---
 title: "Logstash处理Nginx中文Post内容乱码"
 date: 2020-01-04T19:08:29+08:00
-draft: true
+draft: false
 tags: ["Logstash"]
 series: ["ELK"]
 categories: ["ELK"]
-
 ---
 
 
