@@ -7,3 +7,8 @@ theme = "blank"
   tag = "tags"
   series = "series"
   category = "categories"
+
+[highlighting] 
+  pygmentsUseClassic       = true
+  pygmentsCodeFences       = true
+  pygmentsStyle            = "colorful"
