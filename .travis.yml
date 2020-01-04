@@ -14,7 +14,7 @@ deploy:
   repo: ca7dEm0n/ca7dEm0n.github.io
   email: a-ca7@139.com
   name: ca7dEm0n
-  fqdn: https://ca7dEm0n.github.io
+  fqdn: https://a-cat.cn
   target_branch: master
   local-dir: public
   on:
