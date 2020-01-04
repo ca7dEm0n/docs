@@ -16,6 +16,7 @@ categories: ["Python"]
 ### 分页器
 
 分页器的实现官网介绍有两种方式：
+
 - 配置文件配置
 - 继承父类完成自定义分页器
 
@@ -50,6 +51,7 @@ class MyPagination(PageNumberPagination):
 ```
 
 view.py
+
 ```python
 def get(self, request, format=None):
 	pagination_class = MyPagination()
@@ -74,6 +76,7 @@ def get(self, request, format=None):
 
 
 场景1：
+
 > 多个字段中包含搜索关键字返回
 
 ```python
@@ -101,6 +104,7 @@ def get(self, request, format=None):
 ```
 
 场景2：
+
 > 显示多个类型结果
 
 ```python
@@ -125,6 +129,7 @@ def get(self, request, format=None):
 ### 分页器与搜索器
 
 对搜索结果进行分页
+
 ```python
     def get(self, request, format=None):
         pagination_class = MyPagination()
