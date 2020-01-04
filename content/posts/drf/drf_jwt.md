@@ -7,9 +7,7 @@ series: ["django"]
 categories: ["Python"]
 ---
 
-# 前言
-
-本文章记录在drf框架中对JWT鉴权实践过程.
+> 本文章记录在drf框架中对JWT鉴权实践过程.
 
 # 实践
 

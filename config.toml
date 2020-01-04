@@ -2,7 +2,7 @@ baseURL = "https://a-cat.cn"
 languageCode = "en-us"
 title = "zeKe"
 theme = "blank"
-
+summaryLength = 20
 [taxonomies]
   tag = "tags"
   series = "series"

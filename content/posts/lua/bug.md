@@ -6,9 +6,7 @@ series: ["bug"]
 categories: ["lua"]
 ---
 
-# 前言
-
-本文章记录Openresty学习使用过程中碰到的坑.
+> 本文章记录Openresty学习使用过程中碰到的坑.
 
 ### \#1 打印日志
 

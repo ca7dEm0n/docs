@@ -7,9 +7,7 @@ series: ["bug"]
 categories: ["Vue"]
 ---
 
-# 前言
-
-本文章记录Vue学习使用过程中碰到的坑.
+> 本文章记录Vue学习使用过程中碰到的坑.
 
 
 ### \#1 router.options.routes
