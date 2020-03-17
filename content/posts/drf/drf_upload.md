@@ -77,18 +77,29 @@ class ImageUploadView(APIView):
 ## settings.py
 
 ```python
+# DEBUG=True
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "staticfiles"),
 )
 STATIC_URL = '/static/'
+
+# DEBUG=False
+STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = 'media/'
 ```
 
 ## url.py
 
 ```python
+from django.conf.urls.static import static
+from .settings import MEDIA_ROOT
+from .settings import MEDIA_URL
+
 urlpatterns = [
     path('upload/', ImageUploadView.as_view()),
-]
+] + static(MEDIA_URL, document_root=MEDIA_ROOT)
 ```
 
 ## 测试
@@ -103,14 +114,14 @@ curl --location --request POST 'http://localhost:8000/upload/' \
 
 # 返回 
 {
-    "file": "static/images/2020/02/28/31894ca4-f1b0-406a-ac0a-7c52dbce3ef7-1.jpg",
+    "file": "media/static/images/2020/02/28/31894ca4-f1b0-406a-ac0a-7c52dbce3ef7-1.jpg",
     "uploaded_by": "cA7",
     "time": "2020-02-28T02:33:39.765007Z"
 }
 ```
 
-在`static/images/2020/02/28/`中可以看到图片.
+在`media/static/images/2020/02/28/`中可以看到图片.
 
-通过访问链接`http://localhost:8000/static/images/2020/02/28/31894ca4-f1b0-406a-ac0a-7c52dbce3ef7-1.jpg`可以看到图片.
+通过访问链接`http://localhost:8000/media/static/images/2020/02/28/31894ca4-f1b0-406a-ac0a-7c52dbce3ef7-1.jpg`可以看到图片.
 
 
