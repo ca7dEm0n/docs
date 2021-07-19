@@ -5,8 +5,8 @@ git:
 install:
   - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.55.4/hugo_0.55.4_Linux-64bit.deb
   - sudo dpkg -i hugo_0.55.4_Linux-64bit.deb
-  - ls -al  /home/travis/gopath/src/github.com/ca7dEm0n/ca7dEm0n.github.io/themes/
 script:
+  - ls -al
   - hugo
 deploy:
   provider: pages
