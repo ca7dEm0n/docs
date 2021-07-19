@@ -1,6 +1,6 @@
 ---
 title: "关于我"
-date: 2019-01-04T01:02:05+08:00
+date: 2021-07-19T10:02:05+08:00
 draft: false
 ---
 
@@ -11,13 +11,39 @@ draft: false
 - 运维开发
 - 运维监控
 - 容器技术
-- Elasticsearch
+- 网络安全
+
 
 ## 技能
 
-- 开发语言: Python/Shell/Go/JavaScript/Lua
+- 开发语言::
+    - Python
+    - Shell
+    - Rust
+    - JavaScript
+    - Lua
 
-- Web框架: Django/Flask/Vue
+- 开发框架:: 
+    - Django
+    - Fastapi
+    - Actix
+    - Vue
+    - Element-ui
+    - Flask
+
+- 运维服务::
+    - Zabbix
+    - Kubernetes
+    - Openresty
+    - Gitlab
+    - Haproxy
+    - Keepalived
+    - ...
+
+- 数据::
+    - Elasticsearch
+    - MySQL
+    - Redis
 
 
 ## 捐赠
