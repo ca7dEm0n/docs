@@ -22,7 +22,9 @@ categories: ["Python"]
 # 实现
 ---
 
-    ... 我也懒得详细描述了, 直接拉代码[#传送门](https://gitee.com/ca7dem0n/my-zshrc/tree/master).
+    ... 我也懒得详细描述了
+
+[#传送门](https://gitee.com/ca7dem0n/my-zshrc/tree/master).
 
 
 # 效果图
