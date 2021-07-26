@@ -206,9 +206,13 @@ svg:hover.permalink {
 }
 
 .taiji-mode {
-  background-color: #111;
   color: #666;
   margin: -1rem;
+  height: 100%;
+}
+
+#onetalk-content{
+  width: 100%;
 }
 
 .taiji-mode #one-talk-text {
@@ -222,6 +226,7 @@ svg:hover.permalink {
   position: relative;
   /* top: -30%; */
   margin: 1rem 0 0 4rem;
+  min-width: 768px;
   /* font-size: xx-large; */
 }
 

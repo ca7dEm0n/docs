@@ -128,7 +128,9 @@ setTimeout(
                 domRemoveByTag("aside");
                 domRemoveByTag("footer");
                 domRemoveByTag("header");
-                changeMode("main", "taiji-mode ");
+                // #111
+                document.getElementsByTagName("body")[0].style.backgroundColor="#111";
+                changeMode("main", "taiji-mode ");  
             } else {
                 // domDisplay("blog-content", "visibility");
                 domRemoveByID("onetalk-content");
