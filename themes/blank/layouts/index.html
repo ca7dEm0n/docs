@@ -1,10 +1,46 @@
 {{ define "main" }}
 	<main>
+
+	<div id="onetalk-content">
+		<div class="container">
+			<div id="one-talk-text">hello</div>
+		</div>
+
+		<div class="taiji">
+			<p>                     :@0C.      ;00@00C                   </p>
+			<p>                 ,0L                t000@00               </p>
+			<p>               0:                     .@@@000G            </p>
+			<p>            .0                          00@@@@@@          </p>
+			<p>           0                C00L        ,0@@@@@@0,        </p>
+			<p>         ;@                0@@000        0@@@@@@@@@       </p>
+			<p>        fG                 @0@00L        0@@@@@@@@@8      </p>
+			<p>       :8                                @@@@@@@@@0@0     </p>
+			<p>       0                                00@@@@@@@@@@@:    </p>
+			<p>      C:                              :@@@@@@@@@@@@@00    </p>
+			<p>      0                             C@00@@@@@@@@@@@@0@    </p>
+			<p>      0                        100@@@@@@@@@@@@@@@@@@@@,   </p>
+			<p>      0                L00@@@@@@@@@@@@@@@@@@@@@@@@@@@0    </p>
+			<p>      0              0@@@@@<a href="{{ .Site.BaseURL }}#blog" target="_blank">点击进入博客</a>@@@@@@@@@@@@@@@@@0    </p>
+			<p>      t1            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@00    </p>
+			<p>       0           @@@@@@@@@00@@@@@@@@@@@@@@@@@@@@0@0     </p>
+			<p>        0         @@@@@@@@@00;,0@0@@@@@@@@@@@@@@@@@0t     </p>
+			<p>         0        00@@@@@@0i     @@@@@@@@@@@@@@@@@@G      </p>
+			<p>          0       @0@@@@@@@@    i0@@@@@@@@@@@@@@0@.       </p>
+			<p>           80.    ;0@@@@@@@@@@@@@@@@@@@@@@@@@@0@0         </p>
+			<p>             00    8@@@@@@@@@@@@@@@@@@@@@@@@000           </p>
+			<p>               i0.  :0@@@@@@@@@@@@@@@@@@@000C             </p>
+			<p>                  .00.C000@@@@@@@@@@000001                </p>
+			<p>                       .800@@@@@@@@0:                     </p>
+		</div>
+	</div>
+
+	<div id="blog-content">
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 		{{ range $paginator.Pages }}
-			{{ .Render "summary" }}
+		{{ .Render "summary" }}
 		{{ end }}
 		{{ partial "pagination.html" . }}
+	</div>
 	</main>
 {{ partial "sidebar.html" . }}
 {{ end }}

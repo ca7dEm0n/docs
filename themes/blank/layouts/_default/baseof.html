@@ -8,9 +8,12 @@
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+	<script src="{{ "js/book.js" | relURL  }}"></script>
+	<script src="{{ "js/index.js" | relURL  }}"></script>
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
+	<script>next()</script>
 </head>
 <body>
 	{{ partial "header" . }}
