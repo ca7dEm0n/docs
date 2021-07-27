@@ -48,12 +48,12 @@ function setVisibilityByID(id_, value) {
     }
 }
 
-function domRemoveByTag(name) {
-    /**
-     * @description: 删除
-     */
-    document.getElementsByTagName(name)[0].remove();
-}
+// function domRemoveByTag(name) {
+//     /**
+//      * @description: 删除
+//      */
+//     document.getElementsByTagName(name)[0].remove();
+// }
 
 function change(mode) {
     if (mode == "taiji") {
@@ -163,9 +163,9 @@ setTimeout(
                 )
             });
             counter = (counter + 1) % phrases.length;
+            let url_ =  window.location.href;
             let main_mode = document.getElementsByTagName("main")[0].className;
-            let is_blog   = window.location.href.indexOf("#blog") >= 0;
-
+            let is_blog   =  url_.indexOf("#blog") >= 0 ;
             if (is_blog && main_mode != "blog-mode") {
                 change('blog');
             }else if (!is_blog && main_mode != "taiji-mode") {

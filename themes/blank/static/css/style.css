@@ -4,7 +4,7 @@ body {
   /* padding: 0 10px;  */
   color: #333;
   line-height: 1.4;
-  font-family: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+  font-family: monospace, 'montserrat', sans-serif , "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
 
@@ -246,7 +246,7 @@ article h1 {
   letter-spacing: .5em;
   transition: all .5s;
   font-size: x-small;
-  font-family: monospace, 'montserrat', sans-serif;
+  font-family: monospace, 'montserrat', sans-serif ;
   font-weight:bolder;
 }
 
