@@ -34,6 +34,8 @@ draft: false
 ## 站点信息
 ---
 
+- 访问量::
+<img align='right' src="https://profile-counter.glitch.me/ca7dEm0n/count.svg" width="100">
 
 - 架构::
     - hugo + hugo:blank + github + travis 

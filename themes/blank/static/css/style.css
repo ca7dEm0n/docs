@@ -3,7 +3,8 @@ body {
   max-width: 100%;
   /* padding: 0 10px;  */
   color: #333;
-  line-height: 1.4
+  line-height: 1.4;
+  font-family: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
 
@@ -162,6 +163,10 @@ svg:hover.permalink {
   padding: 0
 }
 
+article h1 {
+  margin-bottom: -0.2em;
+}
+
 .content h1 {
   padding: 0;
   margin: 25px 0 0
@@ -211,6 +216,10 @@ svg:hover.permalink {
   height: 100%;
 }
 
+.blog-mode {
+  color: #111;
+}
+
 #onetalk-content{
   width: 100%;
 }
@@ -231,14 +240,13 @@ svg:hover.permalink {
 }
 
 .taiji-mode .taiji p {
-  font-family: 'montserrat', sans-serif;
   color: #fff;
   white-space:pre;
   text-align: center;
   letter-spacing: .5em;
   transition: all .5s;
   font-size: x-small;
-  font-family: monospace;
+  font-family: monospace, 'montserrat', sans-serif;
   font-weight:bolder;
 }
 
@@ -247,14 +255,13 @@ svg:hover.permalink {
   /* word-break: break-all; */
   /* word-wrap: break-word; */
   /* display:block; */
-  font-family: 'montserrat', sans-serif;
+  font-family: monospace, 'montserrat', sans-serif;
   color: #111;
   white-space:pre;
   text-align: center;
   letter-spacing: .5em;
   transition: all .5s;
   font-size: x-small;
-  font-family: monospace;
   font-weight:bolder;
   /* position: relative; */
 }
